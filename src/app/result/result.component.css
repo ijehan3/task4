@@ -1,0 +1,21 @@
+.big{
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-radius: 5px;
+    height: 250px;
+    width: 300px;
+    margin-top: 10px;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#again {
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 70px;
+}

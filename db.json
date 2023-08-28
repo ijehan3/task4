@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User 1"
+    },
+    {
+      "id": 2,
+      "name": "User 2"
+    },
+    {
+      "id": 3,
+      "name": "User 3"
+    }
+  ],
+  "questions": [
+    {
+      "questionText": "Which of these elements in HTML can be used for making a text bold?",
+      "options": [
+        "<a>",
+        "<pre>",
+        "<br>",
+        "<b>"
+      ],
+      "answers": "<b>"
+    },
+    {
+      "questionText": "Which tag do we use in HTML for inserting a line-break?",
+      "options": [
+        "<a>",
+        "<br>",
+        "<b>",
+        "<pre>"
+      ],
+      "answers": "<br>"
+    },
+    {
+      "questionText": "How to create a hyperlink in HTML?",
+      "options": [
+        "<a link = 'www.thinkandlearn.com'> thinkandlearn.com </a>",
+        "<a> www.thinkandlearn.com <thinkandlearn.com /a>",
+        "<a href = 'www.thinkandlearn.com'> thinkandlearn.com </a>",
+        "<a url = 'www.thinkandlearn.com' thinkandlearn.com /a>"
+      ],
+      "answers": "<a href = 'www.thinkandlearn.com'> thinkandlearn.com </a>"
+    },
+    {
+      "questionText": "In HTML, how do we insert an image?",
+      "options": [
+        "<img src = 'jtp.png' />",
+        "<img href = 'jtp.png' />",
+        "<img link = 'jtp.png' />",
+        "<img url = 'jtp.png' />"
+      ],
+      "answers": "<img src = 'jtp.png' />"
+    },
+    {
+      "questionText": "Which tag do we use to define the options present in the drop-down selection lists?",
+      "options": [
+        "<list>",
+        "<option>",
+        "<dropdown>",
+        "<select>"
+      ],
+      "answers": "<option>"
+    }
+  ]
+}

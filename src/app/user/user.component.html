@@ -1,0 +1,30 @@
+<div id="big">
+<div class="container">
+  <div class="row">
+  <div class="col-12">
+    <img src="assets\OIP.jpg" alt="user icon" class="mx-auto d-block img-rounded pt-5" width="236" height="236">
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
+   <div class="h-100 d-flex align-items-center justify-content-center pt-5" id="user">
+    <label for="userSelect" id="select">Select a User:</label>
+    <select id="userSelect" (change)="onSelectUser($event)">
+      <option value="" disabled selected>Select a user...</option>
+      <option *ngFor="let user of users" [value]="user.id">{{ user.name }}</option>
+    </select>
+  </div>
+  </div>
+  <div class="container">
+    <div class="h-100 d-flex align-items-center justify-content-center pt-5" id="user">
+  <div *ngIf="selectedUser">
+    <button id="btn" class="btn btn-danger btn-lg" [routerLink] = "['question']"  [disabled]="!selectedUser">Next</button>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+
+ 

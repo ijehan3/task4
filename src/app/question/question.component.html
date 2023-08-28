@@ -1,0 +1,59 @@
+
+
+
+<div class="container">
+  <div class=" pt-5" id="welcome">
+   <p style="font-size: 20px; font-weight: bold;"> Welcome, {{ selectedUserName }} .. Good Luck!</p>
+  </div></div>
+  <div class="container">
+    <div class="h-100 d-flex align-items-center justify-content-center pt-5" id="user">
+      <h3>Question {{ currentQuestionIndex + 1 }}:</h3>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="h-100 d-flex align-items-center justify-content-center pt-2" id="user">
+      <div *ngIf="questions && questions.length > 0; else loading">
+    <p style="font-size: 20px;">{{ questions[currentQuestionIndex].questionText }}</p>
+    </div>
+    </div>
+  </div>
+  <ng-template #loading>
+    <p>Loading questions...</p>
+  </ng-template>
+    <div class="container">
+      <div class="h-100 pt-3" id="user2">
+    <ol type="a">
+      <li *ngFor="let option of questions[currentQuestionIndex].options">
+        <label>
+          <input
+            type="radio"
+            name="answers"
+            [value]="option"
+            [checked]="selectedOptionIndex === questions[currentQuestionIndex].options.indexOf(option)"
+            (click)="onSelectOption(questions[currentQuestionIndex].options.indexOf(option))"
+          />
+          {{ option }}
+        </label>
+      </li>
+    </ol>
+    </div>
+    </div>
+    <div class="container">
+      <div class="h-100 d-flex align-items-center justify-content-center pt-5" id="user">
+  <button id= "prev" class="btn btn-danger btn-lg" (click)="goToPreviousQuestion()" 
+        *ngIf="currentQuestionIndex > 0">Previous</button>
+
+        <ng-container  *ngIf="currentQuestionIndex === questions.length - 1" >
+ <button id="sbm" class="btn btn-primary btn-lg" type="submit"
+        (click)="submitAnswers()" [disabled]="!submitButtonEnabled">Submit</button>
+      </ng-container>
+  <ng-container *ngIf="currentQuestionIndex < questions.length - 1">
+    <button id="nxt" class="btn btn-danger btn-lg" (click)="goToNextQuestion()" [disabled]="!nextQuestion">Next</button>
+  </ng-container>
+  </div>
+</div>
+
+
+
+

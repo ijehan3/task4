@@ -1,0 +1,32 @@
+h3 {
+    text-decoration-line: overline underline;
+    text-decoration-color: red;
+}
+
+.user
+{
+    margin-left: 500px;
+    margin-top: 200px;
+    border: 1px solid black;
+}
+#welcome {
+    align-items: left; 
+    margin-left: 100px;
+}
+#user2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+#prev{
+    margin-right: 10px;
+    width: 200px;
+}
+#nxt{
+    width: 200px;
+}
+
+#sbm{
+    width: 200px;
+}
